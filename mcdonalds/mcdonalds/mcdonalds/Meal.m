@@ -1,24 +1,22 @@
 //
-//  Salads.m
+//  Meal.m
 //  mcdonalds
 //
-//  Created by sin on 2017/02/24.
+//  Created by sin on 2017/02/26.
 //  Copyright © 2017年 shinji. All rights reserved.
 //
 
-#import "Salads.h"
+#import "Meal.h"
 #import "Ingredient.h"
 
-@implementation Salads
+@implementation Meal
 
--(id) initIngredient:(Ingredient*)ingredient size:(NSString*)size{
+-(id) init{
     //step1 : memory allocation
     self = [super init];
     
     //step2 : properties initialization
     if(self){
-        self.ingredient = ingredient;
-        self.size = size;
         self.name = @"chesbaga";
     }
     return self;

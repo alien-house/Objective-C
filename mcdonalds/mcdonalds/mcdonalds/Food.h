@@ -29,6 +29,6 @@
 -(id) initWithIngredient:(Ingredient*)ingredient receipt:(Receipt*)receipt;
 
 //methods(APIs)
--(void) makeFood;
+-(void) takeFood;
 
 @end

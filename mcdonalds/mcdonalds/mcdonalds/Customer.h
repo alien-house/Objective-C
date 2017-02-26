@@ -14,6 +14,7 @@
 
 //properties
 @property (strong, nonatomic) Invoice* invoice;
+@property (strong, nonatomic) Receipt* receipt;
 @property (strong, nonatomic) NSString* menuname;
 @property (strong, nonatomic) NSString* size;
 
@@ -22,7 +23,9 @@
 -(id) init;
 
 //methods(APIs)
--(Invoice*) orderMenuName:(NSString*)menuname mealID:(NSUInteger)mealID size:(NSString*) size;
+//-(Invoice*) orderMenuName:(NSDictionary*)menuname size:(NSString*) size;
+-(Invoice*) orderMenuName:(NSArray*)menuname mealID:(NSArray*)mealID size:(NSArray*)size price:(NSArray*)price;
 -(Receipt*) payInvoice:(Invoice*)invoice;
+-(void) printReceipt;
 
 @end

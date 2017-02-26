@@ -12,10 +12,12 @@
 		D42C54161E5E833E009B0C40 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C54151E5E833E009B0C40 /* Customer.m */; };
 		D42C54191E5E8808009B0C40 /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C54181E5E8808009B0C40 /* Invoice.m */; };
 		D42C541C1E5E89E7009B0C40 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C541B1E5E89E7009B0C40 /* Receipt.m */; };
-		D4977B961E613BDD00C13B73 /* Salads.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977B951E613BDD00C13B73 /* Salads.m */; };
 		D4977B991E613BEF00C13B73 /* Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977B981E613BEF00C13B73 /* Wrap.m */; };
 		D4977B9C1E613BFD00C13B73 /* Dessert.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977B9B1E613BFD00C13B73 /* Dessert.m */; };
 		D4977B9F1E613C0A00C13B73 /* Bakery.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977B9E1E613C0A00C13B73 /* Bakery.m */; };
+		D4977BA21E6175F800C13B73 /* Combo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977BA11E6175F800C13B73 /* Combo.m */; };
+		D4977BA51E630D9000C13B73 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977BA41E630D9000C13B73 /* Meal.m */; };
+		D4977BA81E638BB700C13B73 /* OrderDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977BA71E638BB700C13B73 /* OrderDetail.m */; };
 		D4DB1F401E5FBC6C00D36588 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F3F1E5FBC6C00D36588 /* Employee.m */; };
 		D4DB1F431E5FBCCC00D36588 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F421E5FBCCC00D36588 /* Ingredient.m */; };
 		D4DB1F491E5FCD5100D36588 /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F481E5FCD5100D36588 /* Burger.m */; };
@@ -36,14 +38,18 @@
 		D42C54181E5E8808009B0C40 /* Invoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Invoice.m; sourceTree = "<group>"; };
 		D42C541A1E5E89E7009B0C40 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
 		D42C541B1E5E89E7009B0C40 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
-		D4977B941E613BDD00C13B73 /* Salads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Salads.h; sourceTree = "<group>"; };
-		D4977B951E613BDD00C13B73 /* Salads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Salads.m; sourceTree = "<group>"; };
 		D4977B971E613BEF00C13B73 /* Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrap.h; sourceTree = "<group>"; };
 		D4977B981E613BEF00C13B73 /* Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrap.m; sourceTree = "<group>"; };
 		D4977B9A1E613BFD00C13B73 /* Dessert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dessert.h; sourceTree = "<group>"; };
 		D4977B9B1E613BFD00C13B73 /* Dessert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dessert.m; sourceTree = "<group>"; };
 		D4977B9D1E613C0A00C13B73 /* Bakery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bakery.h; sourceTree = "<group>"; };
 		D4977B9E1E613C0A00C13B73 /* Bakery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bakery.m; sourceTree = "<group>"; };
+		D4977BA01E6175F800C13B73 /* Combo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Combo.h; sourceTree = "<group>"; };
+		D4977BA11E6175F800C13B73 /* Combo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Combo.m; sourceTree = "<group>"; };
+		D4977BA31E630D9000C13B73 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		D4977BA41E630D9000C13B73 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		D4977BA61E638BB700C13B73 /* OrderDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetail.h; sourceTree = "<group>"; };
+		D4977BA71E638BB700C13B73 /* OrderDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetail.m; sourceTree = "<group>"; };
 		D4DB1F3E1E5FBC6C00D36588 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		D4DB1F3F1E5FBC6C00D36588 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		D4DB1F411E5FBCCC00D36588 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
@@ -93,12 +99,14 @@
 				D40804011E5D26C000288587 /* MainMenu.xib */,
 				D40804041E5D26C000288587 /* Info.plist */,
 				D40803FC1E5D26C000288587 /* Supporting Files */,
+				D4977BA61E638BB700C13B73 /* OrderDetail.h */,
+				D4977BA71E638BB700C13B73 /* OrderDetail.m */,
 				D42C54171E5E8808009B0C40 /* Invoice.h */,
 				D42C54181E5E8808009B0C40 /* Invoice.m */,
-				D42C54141E5E833E009B0C40 /* Customer.h */,
-				D42C54151E5E833E009B0C40 /* Customer.m */,
 				D42C541A1E5E89E7009B0C40 /* Receipt.h */,
 				D42C541B1E5E89E7009B0C40 /* Receipt.m */,
+				D42C54141E5E833E009B0C40 /* Customer.h */,
+				D42C54151E5E833E009B0C40 /* Customer.m */,
 				D4DB1F3E1E5FBC6C00D36588 /* Employee.h */,
 				D4DB1F3F1E5FBC6C00D36588 /* Employee.m */,
 				D4DB1F411E5FBCCC00D36588 /* Ingredient.h */,
@@ -107,8 +115,8 @@
 				D4DB1F4B1E5FD3BC00D36588 /* MealBox.m */,
 				D4DB1F4D1E5FF76500D36588 /* Food.h */,
 				D4DB1F4E1E5FF76500D36588 /* Food.m */,
-				D4977B9A1E613BFD00C13B73 /* Dessert.h */,
-				D4977B9B1E613BFD00C13B73 /* Dessert.m */,
+				D4977BA31E630D9000C13B73 /* Meal.h */,
+				D4977BA41E630D9000C13B73 /* Meal.m */,
 				D4DB1F471E5FCD5100D36588 /* Burger.h */,
 				D4DB1F481E5FCD5100D36588 /* Burger.m */,
 				D4977B971E613BEF00C13B73 /* Wrap.h */,
@@ -119,8 +127,10 @@
 				D4977B9E1E613C0A00C13B73 /* Bakery.m */,
 				D4DB1F531E60D60200D36588 /* Drink.h */,
 				D4DB1F541E60D60200D36588 /* Drink.m */,
-				D4977B941E613BDD00C13B73 /* Salads.h */,
-				D4977B951E613BDD00C13B73 /* Salads.m */,
+				D4977B9A1E613BFD00C13B73 /* Dessert.h */,
+				D4977B9B1E613BFD00C13B73 /* Dessert.m */,
+				D4977BA01E6175F800C13B73 /* Combo.h */,
+				D4977BA11E6175F800C13B73 /* Combo.m */,
 			);
 			path = mcdonalds;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 			files = (
 				D4977B991E613BEF00C13B73 /* Wrap.m in Sources */,
 				D4DB1F4C1E5FD3BC00D36588 /* MealBox.m in Sources */,
+				D4977BA21E6175F800C13B73 /* Combo.m in Sources */,
 				D42C54191E5E8808009B0C40 /* Invoice.m in Sources */,
 				D4DB1F551E60D60200D36588 /* Drink.m in Sources */,
 				D4DB1F431E5FBCCC00D36588 /* Ingredient.m in Sources */,
@@ -215,9 +226,10 @@
 				D4DB1F401E5FBC6C00D36588 /* Employee.m in Sources */,
 				D42C541C1E5E89E7009B0C40 /* Receipt.m in Sources */,
 				D4DB1F491E5FCD5100D36588 /* Burger.m in Sources */,
+				D4977BA81E638BB700C13B73 /* OrderDetail.m in Sources */,
 				D42C54161E5E833E009B0C40 /* Customer.m in Sources */,
+				D4977BA51E630D9000C13B73 /* Meal.m in Sources */,
 				D4977B9F1E613C0A00C13B73 /* Bakery.m in Sources */,
-				D4977B961E613BDD00C13B73 /* Salads.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

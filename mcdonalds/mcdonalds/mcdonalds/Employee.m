@@ -36,16 +36,6 @@
     
 }
 
-/* The Menu ID */
-/*
- Burger  : 1
- Fries   : 2
- Salads  : 3
- Wrap    : 4
- Dessert : 5
- Bakery  : 6
- Drink   : 7
- */
 
 
 

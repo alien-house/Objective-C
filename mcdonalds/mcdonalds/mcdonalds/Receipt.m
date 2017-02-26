@@ -21,9 +21,11 @@
     if(self){
         self.receiptID = invoice.invoiceID;
         self.menuname  = invoice.name;
-        self.amount    = invoice.price;
+        self.price     = invoice.price;
+        self.amount    = invoice.amount;
         self.mealID    = invoice.mealID;
-        self.size      = invoice.size;        
+        self.size      = invoice.size;
+        self.time      = invoice.time;
         self.paidBoo   = true;
     }
     return self;

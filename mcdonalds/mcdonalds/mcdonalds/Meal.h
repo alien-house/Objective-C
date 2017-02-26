@@ -1,15 +1,15 @@
 //
-//  Salads.h
+//  Meal.h
 //  mcdonalds
 //
-//  Created by sin on 2017/02/24.
+//  Created by sin on 2017/02/26.
 //  Copyright © 2017年 shinji. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Ingredient.h"
 
-@interface Salads : NSObject
+@interface Meal : NSObject
 
 //properties
 @property (strong, nonatomic) Ingredient* ingredient;
@@ -21,9 +21,8 @@
 @property int box;
 
 //consructors
--(id) initIngredient:(Ingredient*)ingredient size:(NSString*)size;
+-(id) init;
 
 //methods(APIs)
-
 
 @end
