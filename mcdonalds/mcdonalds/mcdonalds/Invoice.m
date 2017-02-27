@@ -7,6 +7,7 @@
 //
 
 #import "Invoice.h"
+#import "Menu.h"
 #import "OrderDetail.h"
 
 @implementation Invoice
@@ -18,18 +19,37 @@
     
     //step2 : properties initialization
     if(self){
-        
         self.orderDetail = listOfOrderDetails;
+        self.menu = [[Menu alloc] init];
         self.time = [NSDate date];
         // calculate amount of price 
         for(int i = 0; i < listOfOrderDetails.count; i++){
+            NSInteger prices = [self getPriceWithMenuName:listOfOrderDetails[i]];
+            listOfOrderDetails[i].price = prices;
 //            NSUInteger priceInt = [listOfOrderDetails[i].price unsignedIntegerValue];
-            self.amount = self.amount + listOfOrderDetails[i].price;
+            self.amount = self.amount + prices;
         }
         
     }
     
     return self;
 }
+
+
+-(NSInteger) getPriceWithMenuName:(OrderDetail*)name{
+    NSInteger prices = 0;
+    
+        for(int i = 0; i < self.menu.menu.count; i++){
+        if ([self.menu.menu[i].name isEqualToString:name.name]) {
+            prices = self.menu.menu[i].price;
+        }
+    }
+    
+    return prices;
+}
+
+
+
+
 
 @end

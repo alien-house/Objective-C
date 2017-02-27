@@ -12,7 +12,6 @@
 @interface Meal : NSObject
 
 //properties
-@property (strong, nonatomic) Ingredient* ingredient;
 @property (strong, nonatomic) NSString* name;
 @property (strong, nonatomic) NSString* bread;
 @property (strong, nonatomic) NSString* size;

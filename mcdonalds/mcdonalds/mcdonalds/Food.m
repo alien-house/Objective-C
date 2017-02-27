@@ -7,7 +7,6 @@
 //
 
 #import "Food.h"
-#import "Ingredient.h"
 #import "OrderDetail.h"
 #import "Meal.h"
 #import "Burger.h"

@@ -12,6 +12,8 @@
 		D42C54161E5E833E009B0C40 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C54151E5E833E009B0C40 /* Customer.m */; };
 		D42C54191E5E8808009B0C40 /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C54181E5E8808009B0C40 /* Invoice.m */; };
 		D42C541C1E5E89E7009B0C40 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C541B1E5E89E7009B0C40 /* Receipt.m */; };
+		D4909C4C1E642138003E16A8 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = D4909C4B1E642138003E16A8 /* Menu.m */; };
+		D4909C4F1E6421CE003E16A8 /* MenuDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D4909C4E1E6421CE003E16A8 /* MenuDetail.m */; };
 		D4977B991E613BEF00C13B73 /* Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977B981E613BEF00C13B73 /* Wrap.m */; };
 		D4977B9F1E613C0A00C13B73 /* Bakery.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977B9E1E613C0A00C13B73 /* Bakery.m */; };
 		D4977BA21E6175F800C13B73 /* Combo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977BA11E6175F800C13B73 /* Combo.m */; };
@@ -20,7 +22,6 @@
 		D4977BAB1E63D46300C13B73 /* Dessert.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977BAA1E63D46300C13B73 /* Dessert.m */; };
 		D4977BAE1E63D4A200C13B73 /* Salads.m in Sources */ = {isa = PBXBuildFile; fileRef = D4977BAD1E63D4A200C13B73 /* Salads.m */; };
 		D4DB1F401E5FBC6C00D36588 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F3F1E5FBC6C00D36588 /* Employee.m */; };
-		D4DB1F431E5FBCCC00D36588 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F421E5FBCCC00D36588 /* Ingredient.m */; };
 		D4DB1F491E5FCD5100D36588 /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F481E5FCD5100D36588 /* Burger.m */; };
 		D4DB1F4F1E5FF76500D36588 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F4E1E5FF76500D36588 /* Food.m */; };
 		D4DB1F521E60CF7300D36588 /* Fries.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB1F511E60CF7300D36588 /* Fries.m */; };
@@ -38,6 +39,10 @@
 		D42C54181E5E8808009B0C40 /* Invoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Invoice.m; sourceTree = "<group>"; };
 		D42C541A1E5E89E7009B0C40 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
 		D42C541B1E5E89E7009B0C40 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
+		D4909C4A1E642138003E16A8 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		D4909C4B1E642138003E16A8 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		D4909C4D1E6421CE003E16A8 /* MenuDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetail.h; sourceTree = "<group>"; };
+		D4909C4E1E6421CE003E16A8 /* MenuDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDetail.m; sourceTree = "<group>"; };
 		D4977B971E613BEF00C13B73 /* Wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrap.h; sourceTree = "<group>"; };
 		D4977B981E613BEF00C13B73 /* Wrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrap.m; sourceTree = "<group>"; };
 		D4977B9D1E613C0A00C13B73 /* Bakery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bakery.h; sourceTree = "<group>"; };
@@ -54,8 +59,6 @@
 		D4977BAD1E63D4A200C13B73 /* Salads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Salads.m; sourceTree = "<group>"; };
 		D4DB1F3E1E5FBC6C00D36588 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		D4DB1F3F1E5FBC6C00D36588 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
-		D4DB1F411E5FBCCC00D36588 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
-		D4DB1F421E5FBCCC00D36588 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
 		D4DB1F471E5FCD5100D36588 /* Burger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
 		D4DB1F481E5FCD5100D36588 /* Burger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
 		D4DB1F4D1E5FF76500D36588 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
@@ -109,8 +112,6 @@
 				D42C54151E5E833E009B0C40 /* Customer.m */,
 				D4DB1F3E1E5FBC6C00D36588 /* Employee.h */,
 				D4DB1F3F1E5FBC6C00D36588 /* Employee.m */,
-				D4DB1F411E5FBCCC00D36588 /* Ingredient.h */,
-				D4DB1F421E5FBCCC00D36588 /* Ingredient.m */,
 				D4DB1F4D1E5FF76500D36588 /* Food.h */,
 				D4DB1F4E1E5FF76500D36588 /* Food.m */,
 				D4977BA31E630D9000C13B73 /* Meal.h */,
@@ -131,6 +132,10 @@
 				D4977BAD1E63D4A200C13B73 /* Salads.m */,
 				D4977BA01E6175F800C13B73 /* Combo.h */,
 				D4977BA11E6175F800C13B73 /* Combo.m */,
+				D4909C4A1E642138003E16A8 /* Menu.h */,
+				D4909C4B1E642138003E16A8 /* Menu.m */,
+				D4909C4D1E6421CE003E16A8 /* MenuDetail.h */,
+				D4909C4E1E6421CE003E16A8 /* MenuDetail.m */,
 			);
 			path = mcdonalds;
 			sourceTree = "<group>";
@@ -215,9 +220,9 @@
 			files = (
 				D4977B991E613BEF00C13B73 /* Wrap.m in Sources */,
 				D4977BA21E6175F800C13B73 /* Combo.m in Sources */,
+				D4909C4C1E642138003E16A8 /* Menu.m in Sources */,
 				D42C54191E5E8808009B0C40 /* Invoice.m in Sources */,
 				D4DB1F551E60D60200D36588 /* Drink.m in Sources */,
-				D4DB1F431E5FBCCC00D36588 /* Ingredient.m in Sources */,
 				D4DB1F521E60CF7300D36588 /* Fries.m in Sources */,
 				D40803FE1E5D26C000288587 /* main.m in Sources */,
 				D4977BAE1E63D4A200C13B73 /* Salads.m in Sources */,
@@ -228,6 +233,7 @@
 				D4977BA81E638BB700C13B73 /* OrderDetail.m in Sources */,
 				D42C54161E5E833E009B0C40 /* Customer.m in Sources */,
 				D4977BA51E630D9000C13B73 /* Meal.m in Sources */,
+				D4909C4F1E6421CE003E16A8 /* MenuDetail.m in Sources */,
 				D4977BAB1E63D46300C13B73 /* Dessert.m in Sources */,
 				D4977B9F1E613C0A00C13B73 /* Bakery.m in Sources */,
 			);

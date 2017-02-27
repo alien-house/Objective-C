@@ -9,9 +9,9 @@
 #import "objc/runtime.h"
 #import "Employee.h"
 #import "Invoice.h"
-#import "Ingredient.h"
 #import "Food.h"
 #import "Receipt.h"
+#import "Burger.h"
 
 @implementation Employee
 
@@ -40,8 +40,12 @@
 
 -(void) announceWithMealWithBox:(Food*)food{
     
+    NSLog(@"[Staff]\n");
     NSLog(@"Your meals ");
     for(int i = 0; i < food.meal.count; i++){
+//        if([food.meal[i] isMemberOfClass:[Burger class]]){
+//            NSLog(@"you are ba-ga-!!!!!!");
+//        }
             NSLog(@"%@,",food.meal[i].name);
     }
     NSLog(@"have been ready!! \n");

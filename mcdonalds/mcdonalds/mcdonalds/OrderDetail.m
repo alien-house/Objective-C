@@ -10,7 +10,7 @@
 
 @implementation OrderDetail
 
--(id) initWithID:(NSInteger)orderDetailID mealID:(NSInteger)mealID name:(NSString*)name size:(NSString*)size price:(NSInteger)price{
+-(id) initWithID:(NSInteger)orderDetailID mealID:(NSInteger)mealID name:(NSString*)name size:(NSString*)size{
     
     //step1 : memory allocation
     self = [super init]; // memory allocation
@@ -19,7 +19,6 @@
     if(self){
         self.orderDetailID = orderDetailID;
         self.mealID = mealID;
-        self.price = price;
         self.size = size;
         self.name = name;
     }

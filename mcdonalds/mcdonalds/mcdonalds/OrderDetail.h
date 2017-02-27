@@ -19,7 +19,7 @@
 
 
 //consructors
--(id) initWithID:(NSInteger)orderDetailID mealID:(NSInteger)mealID name:(NSString*)name size:(NSString*)size price:(NSInteger)price;
+-(id) initWithID:(NSInteger)orderDetailID mealID:(NSInteger)mealID name:(NSString*)name size:(NSString*)size;
 
 //methods(APIs)
 

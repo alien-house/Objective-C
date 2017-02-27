@@ -8,19 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Customer.h"
+#import "Employee.h"
 #import "OrderDetail.h"
 #import "Invoice.h"
 #import "Receipt.h"
-#import "Employee.h"
-#import "Burger.h"
-#import "Fries.h"
-#import "Drink.h"
-#import "Dessert.h"
-#import "Bakery.h"
-#import "Wrap.h"
 
 int main(int argc, const char * argv[]) {
     
+    /* ===================================== */
+    // SUBJECT :
+    // The customer buys some meal through staffs directly and pays for it.
+    /* ===================================== */
     
     /* ===================================== */
     // Creating an Customer & Staff object
@@ -43,11 +41,11 @@ int main(int argc, const char * argv[]) {
      Bakery  : 7
      */
     OrderDetail* orderDetail1 = [[OrderDetail alloc]
-                                 initWithID:1 mealID:1 name:@"ChoeeseBurger" size:@"small" price:10];
+                                 initWithID:1 mealID:1 name:@"ChoeeseBurger" size:@"small"];
     OrderDetail* orderDetail2 = [[OrderDetail alloc]
-                                 initWithID:1 mealID:2 name:@"Fries" size:@"medium" price:20];
+                                 initWithID:1 mealID:2 name:@"FrenchFries" size:@"medium"];
     OrderDetail* orderDetail3 = [[OrderDetail alloc]
-                                 initWithID:1 mealID:3 name:@"Coke" size:@"large" price:30];
+                                 initWithID:1 mealID:3 name:@"Coke" size:@"large"];
     NSArray<OrderDetail*>* listOfOrderDetails = @[orderDetail1, orderDetail2, orderDetail3];
     
     
@@ -74,6 +72,7 @@ int main(int argc, const char * argv[]) {
     /* ===================================== */
     Food* customerOrderedMeal = [staff makeMealReceipt:receipt];
     [staff announceWithMealWithBox:customerOrderedMeal];
+    [customer printThanks];
     
     
     return NSApplicationMain(argc, argv);

@@ -60,6 +60,27 @@
 
 
 
+-(void) printThanks{
+    NSLog(@"[Customer]\n");
+    NSLog(@"Thank you!!\n");
+}
+
+
+
+
+////NSDateFormatter
+//NSDateFormatter *format = [[NSDateFormatter alloc] init];
+//
+////Locale.setting japanese time。
+//[format setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
+//
+////出力形式を文字列で指定する。
+//[format setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
+//
+//// 現在時刻を取得しつつ、NSDateFormatterクラスをかませて、文字列を出力する。
+//NSString *StTime = [format stringFromDate:[NSDate date]]; NSLog(@"%f",StTime);
+//
+
 //    [menuname enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
 //        NSLog(@"%lu: %@", (unsigned long)idx, obj);
 //

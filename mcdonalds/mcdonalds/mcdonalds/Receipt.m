@@ -29,10 +29,8 @@
             [self.size addObject:invoice.orderDetail[i].size];
             [self.price addObject:[NSNumber numberWithInteger:invoice.orderDetail[i].price]];
         }
-        
         self.amount    = invoice.amount;
         self.time      = invoice.time;
-        self.paidBoo   = true;
     }
     return self;
     

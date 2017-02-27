@@ -13,7 +13,6 @@
 @interface Receipt : NSObject
 
 //properties
-//@property (strong, nonatomic) Invoice* invoice;
 @property (strong, nonatomic) NSArray<OrderDetail*>* orderDetail;
 @property (strong, nonatomic) NSMutableArray<NSString*>* menuname;
 @property (strong, nonatomic) NSMutableArray<NSString*>* size;
@@ -22,13 +21,9 @@
 @property NSInteger receiptID;
 @property NSInteger mealID;
 @property NSDate* time;
-@property BOOL paidBoo;
 
 //consructors
 -(id) initInvoice:(Invoice*)invoice;
-
-
-//Receipt* receipt = [[Receipt alloc] initInvoice:invoice];
 
 //methods(APIs)
 

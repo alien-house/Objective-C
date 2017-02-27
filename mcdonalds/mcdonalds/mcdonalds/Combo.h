@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "Meal.h"
 
-@interface Combo : NSObject
+@interface Combo : Meal
 
+//properties
+@property (strong, nonatomic) NSMutableArray<Meal*>* mealCombo;
+@property BOOL isCombo;
+
+//consructors
+
+//methods(APIs)
 @end
