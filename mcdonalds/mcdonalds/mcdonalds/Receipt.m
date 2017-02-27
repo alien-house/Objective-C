@@ -19,12 +19,18 @@
     
     //step2 : properties initialization
     if(self){
-        self.receiptID = invoice.invoiceID;
-        self.menuname  = invoice.name;
-        self.price     = invoice.price;
+        self.orderDetail = invoice.orderDetail;
+        self.receiptID = invoice.orderDetail[0].orderDetailID;
+        self.menuname  = [[NSMutableArray alloc] init];
+        self.size      = [[NSMutableArray alloc] init];
+        self.price     = [[NSMutableArray alloc] init];
+        for(int i = 0; i < invoice.orderDetail.count; i++){
+            [self.menuname addObject:invoice.orderDetail[i].name];
+            [self.size addObject:invoice.orderDetail[i].size];
+            [self.price addObject:[NSNumber numberWithInteger:invoice.orderDetail[i].price]];
+        }
+        
         self.amount    = invoice.amount;
-        self.mealID    = invoice.mealID;
-        self.size      = invoice.size;
         self.time      = invoice.time;
         self.paidBoo   = true;
     }

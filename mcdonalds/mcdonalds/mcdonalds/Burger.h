@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Meal.h"
-#import "Ingredient.h"
 
 @interface Burger : Meal
 
 //properties
 
 //consructors
--(id) initIngredient:(Ingredient*)ingredient size:(NSString*)size;
+//-(id) initIngredient:(Ingredient*)ingredient size:(NSString*)size;
 
 //methods(APIs)
 

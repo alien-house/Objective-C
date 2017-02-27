@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Ingredient.h"
 #import "Receipt.h"
+#import "Meal.h"
 #import "Burger.h"
 #import "Fries.h"
 
 @interface Food : NSObject
 
 //properties
+@property (strong, nonatomic) NSMutableArray<Meal*>* meal;
 @property (strong, nonatomic) Ingredient* ingredient;
 @property (strong, nonatomic) NSString* bread;
 @property (strong, nonatomic) NSString* size;
@@ -26,9 +28,10 @@
 @property (strong, nonatomic) Fries* fries;
 
 //consructors
--(id) initWithIngredient:(Ingredient*)ingredient receipt:(Receipt*)receipt;
+-(id) initReceipt:(Receipt*)receipt;
 
 //methods(APIs)
 -(void) takeFood;
+-(Meal*) perpareMeal:(OrderDetail*)orderDetail;
 
 @end

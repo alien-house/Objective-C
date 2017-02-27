@@ -23,9 +23,9 @@
 -(id) init;
 
 //methods(APIs)
-//-(Invoice*) orderMenuName:(NSDictionary*)menuname size:(NSString*) size;
--(Invoice*) orderMenuName:(NSArray*)menuname mealID:(NSArray*)mealID size:(NSArray*)size price:(NSArray*)price;
+-(Invoice*) orderMenu:(NSArray<OrderDetail*>*)listOfOrderDetails;
+//-(Invoice*) orderMenuName:(NSArray*)menuname mealID:(NSArray*)mealID size:(NSArray*)size price:(NSArray*)price;
 -(Receipt*) payInvoice:(Invoice*)invoice;
--(void) printReceipt;
+-(void) printReceipt:(Receipt*)receipt;
 
 @end

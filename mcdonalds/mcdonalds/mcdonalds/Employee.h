@@ -11,7 +11,6 @@
 #import "Receipt.h"
 #import "Food.h"
 #import "Burger.h"
-#import "MealBox.h"
 
 @interface Employee : NSObject
 
@@ -23,14 +22,15 @@
 @property (strong, nonatomic) Receipt* receipt;
 
 //consructors
--(id)init;
+-(id)initWithName:(NSString*)name age:(NSInteger)age;
 
 //Receipt* receipt = [[Receipt alloc] initInvoice:invoice];
 
 //methods(APIs)
--(Food*) makeMealIngredient:(Ingredient*)ingredient receipt:(Receipt*)receipt;
--(MealBox*) serveMealReceipt:(Receipt*)receipt food:(Food*)food;
--(void) announceWithMealWithBox:(MealBox*)mealBox;
+-(void) announceWithAmount:(Invoice*)invoice;
+-(Food*) makeMealReceipt:(Receipt*)receipt;
+//-(MealBox*) serveMealReceipt:(Receipt*)receipt food:(Food*)food;
+-(void) announceWithMealWithBox:(Food*)food;
 
 
 @end

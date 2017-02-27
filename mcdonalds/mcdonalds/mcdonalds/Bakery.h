@@ -7,21 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Ingredient.h"
+#import "Meal.h"
 
-@interface Bakery : NSObject
+@interface Bakery : Meal
 
 //properties
-@property (strong, nonatomic) Ingredient* ingredient;
-@property (strong, nonatomic) NSString* name;
-@property (strong, nonatomic) NSString* bread;
-@property (strong, nonatomic) NSString* size;
-@property float price;
-@property BOOL breakfast;
-@property int box;
 
 //consructors
--(id) initIngredient:(Ingredient*)ingredient size:(NSString*)size;
 
 //methods(APIs)
 

@@ -7,26 +7,24 @@
 //
 
 #import "Invoice.h"
+#import "OrderDetail.h"
 
 @implementation Invoice
 
--(id) initWithID:(NSInteger)invoiceID name:(NSArray*)name mealID:(NSArray*)mealID price:(NSArray*)myPrice size:(NSArray*)mySize{
+-(id) initWithlistOfOrderDetails:(NSArray<OrderDetail*>*)listOfOrderDetails{
     
     //step1 : memory allocation
     self = [super init]; // memory allocation
     
     //step2 : properties initialization
     if(self){
-        self.invoiceID = invoiceID;
-        self.price = myPrice;
-        self.size = mySize;
-        self.name = name;
-        self.mealID = mealID;
+        
+        self.orderDetail = listOfOrderDetails;
         self.time = [NSDate date];
         // calculate amount of price 
-        for(int i = 0; i < myPrice.count; i++){
-            NSUInteger priceInt = [myPrice[i] unsignedIntegerValue];
-            self.amount = self.amount + priceInt;
+        for(int i = 0; i < listOfOrderDetails.count; i++){
+//            NSUInteger priceInt = [listOfOrderDetails[i].price unsignedIntegerValue];
+            self.amount = self.amount + listOfOrderDetails[i].price;
         }
         
     }

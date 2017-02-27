@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Meal.h"
 
 @interface Combo : NSObject
 

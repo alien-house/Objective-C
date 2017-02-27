@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OrderDetail.h"
 
 @interface Invoice : NSObject
 
@@ -17,15 +18,17 @@
 //@property NSInteger price;
 //@property NSInteger mealID;
 
-@property (strong, nonatomic) NSArray* size;
-@property (strong, nonatomic) NSArray* name;
-@property (strong, nonatomic) NSArray* price;
-@property (strong, nonatomic) NSArray* mealID;
+//@property (strong, nonatomic) NSArray* size;
+//@property (strong, nonatomic) NSArray* name;
+//@property (strong, nonatomic) NSArray* price;
+//@property (strong, nonatomic) NSArray* mealID;
+@property (strong, nonatomic) NSArray<OrderDetail*>* orderDetail;
 @property NSDate* time;
 @property float amount;
 
 //consructors
--(id) initWithID:(NSInteger)invoiceID name:(NSArray*) name mealID:(NSArray*) mealID price:(NSArray*) myPrice size:(NSArray*) mySize;
+-(id) initWithlistOfOrderDetails:(NSArray<OrderDetail*>*)listOfOrderDetails;
+//-(id) initWithID:(NSInteger)invoiceID name:(NSArray*) name mealID:(NSArray*) mealID price:(NSArray*) myPrice size:(NSArray*) mySize;
 
 //methods(APIs)
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Ingredient.h"
+#import "OrderDetail.h"
 
 @interface Meal : NSObject
 
@@ -21,7 +21,7 @@
 @property int box;
 
 //consructors
--(id) init;
+-(id) initOrderDetail:(OrderDetail*)orderDetail;
 
 //methods(APIs)
 

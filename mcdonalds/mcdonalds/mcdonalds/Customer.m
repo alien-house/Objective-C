@@ -7,6 +7,7 @@
 //
 
 #import "Customer.h"
+#import "OrderDetail.h"
 #import "Invoice.h"
 #import "Receipt.h"
 
@@ -22,51 +23,50 @@
     return self;
 }
 
--(Invoice*) orderMenuName:(NSArray*)menuname mealID:(NSArray*)mealID size:(NSArray*)size price:(NSArray*)price{
-    
-//    [menuname enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
-//        NSLog(@"%lu: %@", (unsigned long)idx, obj);
-//        
-//        if ([obj isEqualToString:@"c"]) {
-//            *stop = YES;
-//        }
-//    }];
-    
-    
-    Invoice* invoice = [[Invoice alloc] initWithID:1 name:menuname mealID:mealID price:price size:size];
-//    
-//    NSLog(@"\n I'd like to order %@ size of %@\n", size, menuname);
+
+-(Invoice*) orderMenu:(NSArray<OrderDetail*>*)listOfOrderDetails{
+    NSLog(@"[Customer]\n");
+    for(int i = 0; i < listOfOrderDetails.count; i++){
+        NSLog(@"I'd like to order %@ size of %@\n", listOfOrderDetails[i].size, listOfOrderDetails[i].name);
+    }
+    Invoice* invoice = [[Invoice alloc] initWithlistOfOrderDetails:listOfOrderDetails];
     return invoice;
-    return 0;
-    
 }
 
 
 -(Receipt*) payInvoice:(Invoice*)invoice{
     
     Receipt* receipt = [[Receipt alloc] initInvoice:invoice];
-    self.receipt = receipt;
-    
-//    NSLog(@"\n I'd like to order %@ size of %@\n", size, menuname);
+    NSLog(@"\n The Customer paid for it! \n");
     return receipt;
     
 }
 
 
--(void) printReceipt{
+-(void) printReceipt:(Receipt*)receipt{
     NSLog(@"==============================\n");
-    NSLog(@"Your order number : %ld\n", (long)self.receipt.receiptID);
+    NSLog(@"********** RECEIPT ***********\n");
+    NSLog(@"Your order number : %ld\n", (long)receipt.receiptID);
     NSLog(@"! ! ! THANK YOU ! ! !\n");
-    NSLog(@"%@\n", self.receipt.time);
-    for(int i = 0; i < self.receipt.menuname.count; i++){
-        NSLog(@"%@:%@ $%@\n", self.receipt.menuname[i], self.receipt.size[i], self.receipt.price[i]);
+    NSLog(@"%@\n", receipt.time);
+    
+    for(int i = 0; i < receipt.menuname.count; i++){
+        NSLog(@"%@:%@ $%@\n", receipt.menuname[i], receipt.size[i], receipt.price[i]);
     }
     NSLog(@"------------------------------\n");
-    NSLog(@"Total : $%0.2f\n", self.receipt.amount);
+    NSLog(@"Total : $%0.2f\n", receipt.amount);
     NSLog(@"==============================\n");
 }
 
 
+
+//    [menuname enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
+//        NSLog(@"%lu: %@", (unsigned long)idx, obj);
+//
+//        if ([obj isEqualToString:@"c"]) {
+//            *stop = YES;
+//        }
+//    }];
 
 
 @end

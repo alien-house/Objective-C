@@ -8,15 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "Invoice.h"
-
+#import "OrderDetail.h"
 
 @interface Receipt : NSObject
 
 //properties
 //@property (strong, nonatomic) Invoice* invoice;
-@property (strong, nonatomic) NSArray* menuname;
-@property (strong, nonatomic) NSArray* size;
-@property (strong, nonatomic) NSArray* price;
+@property (strong, nonatomic) NSArray<OrderDetail*>* orderDetail;
+@property (strong, nonatomic) NSMutableArray<NSString*>* menuname;
+@property (strong, nonatomic) NSMutableArray<NSString*>* size;
+@property (strong, nonatomic) NSMutableArray* price;
 @property float amount;
 @property NSInteger receiptID;
 @property NSInteger mealID;

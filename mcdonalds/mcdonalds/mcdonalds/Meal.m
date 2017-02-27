@@ -7,17 +7,18 @@
 //
 
 #import "Meal.h"
-#import "Ingredient.h"
+#import "OrderDetail.h"
 
 @implementation Meal
 
--(id) init{
+-(id) initOrderDetail:(OrderDetail*)orderDetail{
     //step1 : memory allocation
     self = [super init];
     
     //step2 : properties initialization
     if(self){
-        self.name = @"chesbaga";
+        self.name = orderDetail.name;
+        self.size = orderDetail.size;
     }
     return self;
     
