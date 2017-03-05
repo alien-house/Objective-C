@@ -6,12 +6,10 @@
 //  Copyright © 2017年 shinji. All rights reserved.
 //
 
-#import "objc/runtime.h"
 #import "Employee.h"
 #import "Invoice.h"
 #import "Food.h"
 #import "Receipt.h"
-#import "Burger.h"
 
 @implementation Employee
 
@@ -20,6 +18,8 @@
     self = [super init];
     //step2 : properties initialization
     if(self){
+        self.name = name;
+        self.age  = age;
     }
     return self;
 }
@@ -38,15 +38,29 @@
     
 }
 
--(void) announceWithMealWithBox:(Food*)food{
+-(void) announceWithMeal:(Food*)food{
     
     NSLog(@"[Staff]\n");
     NSLog(@"Your meals ");
     for(int i = 0; i < food.meal.count; i++){
-//        if([food.meal[i] isMemberOfClass:[Burger class]]){
-//            NSLog(@"you are ba-ga-!!!!!!");
-//        }
-            NSLog(@"%@,",food.meal[i].name);
+        Meal* meal = [food.meal objectAtIndex:i];
+        if([meal isMemberOfClass:[Burger class]]){
+            [((Burger*)meal) printName];
+        }else if([food.meal[i] isMemberOfClass:[Fries class]]){
+            [((Fries*)meal) printName];
+        }else if([food.meal[i] isMemberOfClass:[Drink class]]){
+            [((Drink*)meal) printName];
+        }else if([food.meal[i] isMemberOfClass:[Salads class]]){
+            [((Salads*)meal) printName];
+        }else if([food.meal[i] isMemberOfClass:[Wrap class]]){
+            [((Wrap*)meal) printName];
+        }else if([food.meal[i] isMemberOfClass:[Dessert class]]){
+            [((Dessert*)meal) printName];
+        }else if([food.meal[i] isMemberOfClass:[Bakery class]]){
+            [((Bakery*)meal) printName];
+        }
+        
+//        NSLog(@"%@,",food.meal[i].name);
     }
     NSLog(@"have been ready!! \n");
     

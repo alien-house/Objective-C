@@ -10,6 +10,12 @@
 #import "Receipt.h"
 #import "Food.h"
 #import "Burger.h"
+#import "Fries.h"
+#import "Drink.h"
+#import "Salads.h"
+#import "Wrap.h"
+#import "Dessert.h"
+#import "Bakery.h"
 
 @interface Employee : NSObject
 
@@ -24,7 +30,7 @@
 //methods(APIs)
 -(void) announceWithAmount:(Invoice*)invoice;
 -(Food*) makeMealReceipt:(Receipt*)receipt;
--(void) announceWithMealWithBox:(Food*)food;
+-(void) announceWithMeal:(Food*)food;
 
 
 @end

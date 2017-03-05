@@ -56,10 +56,11 @@ int main(int argc, const char * argv[]) {
     
     
     /* ===================================== */
-    // 3) Announcing amount of cost
+    // 3) Pay for it
     /* ===================================== */
     [staff announceWithAmount:invoice];
     Receipt* receipt = [customer payInvoice:invoice];
+    
     
     /* ===================================== */
     // 4) Customer see the receipt
@@ -71,13 +72,9 @@ int main(int argc, const char * argv[]) {
     // 5) Preparing the meals & Calling
     /* ===================================== */
     Food* customerOrderedMeal = [staff makeMealReceipt:receipt];
-    [staff announceWithMealWithBox:customerOrderedMeal];
+    [staff announceWithMeal:customerOrderedMeal];
     [customer printThanks];
-    
     
     return NSApplicationMain(argc, argv);
 }
-
-
-
 

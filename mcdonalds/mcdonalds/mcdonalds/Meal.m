@@ -24,4 +24,8 @@
     
 }
 
+-(void)printName{
+    NSLog(@"%@\n",self.name);
+}
+
 @end

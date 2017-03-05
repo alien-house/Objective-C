@@ -17,11 +17,11 @@
 @property (strong, nonatomic) NSString* size;
 @property float price;
 @property BOOL breakfast;
-@property int box;
 
 //consructors
 -(id) initOrderDetail:(OrderDetail*)orderDetail;
 
 //methods(APIs)
+-(void)printName;
 
 @end

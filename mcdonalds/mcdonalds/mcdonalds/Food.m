@@ -54,7 +54,6 @@
 //            Wrap* meal    = [staff makeMealIngredient:cheeseIngredient receipt:receipt];
 //
 //            if([meal isMemberOfClass:[Wrap class]]){
-//
 //            }
 //
 //        }
