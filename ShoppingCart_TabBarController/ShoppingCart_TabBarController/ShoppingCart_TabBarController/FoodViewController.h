@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Product.h"
 #import "FoodTableViewCell.h"
+#import "TabbarViewController.h"
 
 @protocol FoodViewDelegate <NSObject>
 -(void) addItemIntoCart:(Product*)item;

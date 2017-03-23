@@ -21,12 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+   
     self.clothTableView.delegate   = self;
     self.clothTableView.dataSource = self;
     self.itemsForTextFName = [@[@"ClothID",@"ClothName",@"ClothPrice",@"ClothMadeInCountry",@"ClothMaterialsName",@"ClothMaterialsCode"] mutableCopy];
     
     self.clothTextFieldArray = [[NSMutableArray alloc] init];
+    
+//    [self.tabBarController setSelectedIndex:1];
     
     // Do any additional setup after loading the view.
 }
@@ -49,6 +52,7 @@
 
 - (IBAction)addItem:(UIButton *)sender {
     
+    NSLog(@"ClothViewController Itemmm");
 
     
     ClothTableViewCell* cell = [self.clothTableView dequeueReusableCellWithIdentifier:@"clothTextFieldID"];
@@ -73,9 +77,19 @@
                      ClothMaterials:mateirals
                      ];
     
-    [self.delegate addItemIntoCart:self.cloth];
     
-    [self.navigationController popViewControllerAnimated:YES];
+//    NSLog(@"%f",((TabbarViewController*)(self.tabBarController)).totalPrice);
+    
+    [((TabbarViewController*)(self.tabBarController)) addItemIntoCart:self.cloth];
+
+//    self.tabBarController.viewControllers[0].totalPrice
+
+//    self.tabBarController.totalPrice
+//    [self.tabBarController addItemIntoCart:self.cloth];
+    
+//    [self.delegate addItemIntoCart:self.cloth];
+    
+//    [self.navigationController popViewControllerAnimated:YES];
 //    [self dismissViewControllerAnimated:YES completion:nil];
     
 }

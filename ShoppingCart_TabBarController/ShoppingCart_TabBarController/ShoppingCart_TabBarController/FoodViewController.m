@@ -69,8 +69,9 @@
                  foodIngredients:ingredients
                  ];
     
-    [self.delegate addItemIntoCart:self.food];
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.delegate addItemIntoCart:self.food];
+//    [self.navigationController popViewControllerAnimated:YES];
+    [((TabbarViewController*)(self.tabBarController)) addItemIntoCart:self.food];
     
 }
 

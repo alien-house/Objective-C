@@ -10,6 +10,7 @@
 #import "Product.h"
 #import "ClothViewController.h"
 #import "ClothTableViewCell.h"
+#import "TabbarViewController.h"
 
 @protocol ClothViewDelegate <NSObject>
 -(void) addItemIntoCart:(Product*)item;

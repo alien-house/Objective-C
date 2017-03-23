@@ -28,7 +28,8 @@
 }
 
 -(void) viewDidAppear:(BOOL)animated{
-    [self listItemNamePrint:self.listItem];
+    
+    [self listItemNamePrint:((TabbarViewController*)(self.tabBarController)).cart];
     
 }
 
@@ -55,6 +56,7 @@
             sentence = [[sentence stringByAppendingString:list[i].productName] stringByAppendingString:@"\n"];
         }
         self.listItemName.text = sentence;
+        NSLog(@":::%@",sentence);
     }
 }
 
@@ -62,6 +64,7 @@
 - (IBAction)btnBack:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -76,8 +79,8 @@
         
         //Step2: Data Binding
         NSString* sentence = [[NSString alloc] init];
-        for (int i = 0; i < self.listItem.count; i++) {
-            sentence = [[sentence stringByAppendingString:self.listItem[i].productName] stringByAppendingString:@"\n"];
+        for (int i = 0; i < ((TabbarViewController*)(self.tabBarController)).cart.count; i++) {
+            sentence = [[sentence stringByAppendingString:((TabbarViewController*)(self.tabBarController)).cart[i].productName] stringByAppendingString:@"\n"];
         }
         cell.listView.text = sentence;
         
@@ -98,7 +101,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return self.listItem.count;
+//    return ((TabbarViewController*)(self.tabBarController)).cart.count;
+    return 1;
     
     
 }

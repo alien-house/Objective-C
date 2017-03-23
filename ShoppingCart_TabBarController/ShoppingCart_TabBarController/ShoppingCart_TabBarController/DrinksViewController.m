@@ -66,8 +66,9 @@
                   productSize:(int)txtfieldArray[4]
                   isDrinkDiet:txtfieldArray[5]];
     
-    [self.delegate addItemIntoCart:self.drink];
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.delegate addItemIntoCart:self.drink];
+    //    [self.navigationController popViewControllerAnimated:YES];
+    [((TabbarViewController*)(self.tabBarController)) addItemIntoCart:self.drink];
     
 }
 

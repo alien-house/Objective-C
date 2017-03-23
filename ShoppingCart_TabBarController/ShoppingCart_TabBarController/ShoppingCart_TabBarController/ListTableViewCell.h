@@ -1,8 +1,8 @@
 //
 //  ListTableViewCell.h
-//  ShoppingCart_TableView
+//  ShoppingCart_TabBarController
 //
-//  Created by sin on 2017/03/14.
+//  Created by sin on 2017/03/21.
 //  Copyright © 2017年 shinji. All rights reserved.
 //
 

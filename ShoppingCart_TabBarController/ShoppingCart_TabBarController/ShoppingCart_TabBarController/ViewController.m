@@ -31,10 +31,16 @@
     self.cart = [[NSMutableArray alloc] init];
     self.itemsForSection0 = [@[@"cloth.png",@"coffee.png",@"food.png"] mutableCopy];
     
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
+- (void)viewWillAppear:(BOOL)animated{
+    
+//    NSLog(@"%f",((TabbarViewController*)(self.tabBarController)).totalPrice);
+    self.priceBox.text = [NSString stringWithFormat:@"$%0.2f", ((TabbarViewController*)(self.tabBarController)).totalPrice];
+//    [((TabbarViewController*)(self.tabBarController)).totalPrice];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -42,13 +48,27 @@
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    
+//    if ([segue.identifier isEqualToString:@"drinksView"]) {
+//        DrinksViewController *drinksViewController = segue.destinationViewController;
+//        drinksViewController.delegate = self;
+//    }else if([segue.identifier isEqualToString:@"foodView"]){
+//        FoodViewController *foodViewController = segue.destinationViewController;
+//        foodViewController.delegate = self;
+//    }else if([segue.identifier isEqualToString:@"clothView"]){
+//        ClothViewController *clothViewController = segue.destinationViewController;
+//        clothViewController.delegate = self;
+//    }
+//    
+//    if ([segue.identifier isEqualToString:@"itemListView"]) {
+//        ListViewController *listControaddItemIntoCartller = segue.destinationViewController;
+//        listControaddItemIntoCartller.listItem = self.cart;
+//    }
+//
+//    
+//}
 
-    if ([segue.identifier isEqualToString:@"itemListView"]) {
-        ListViewController *listController = segue.destinationViewController;
-        listController.listItem = self.cart;
-    }
-}
 
 
 -(void)addItemIntoCart:(Product*)item{
